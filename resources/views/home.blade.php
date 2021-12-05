@@ -16,6 +16,18 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+
+                <div class="table-responsive">
+        <table border="1" class="table" style="align:center;">
+        @foreach($users as $user)
+        <tr><th>Name</th>
+            <th>Email</th></tr>
+        <tr> 
+            <td>{{$user->name}}</td>
+            <td>{{$user->email}}</td></tr>
+            @endforeach
+</table>
+</div>
             </div>
         </div>
     </div>

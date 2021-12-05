@@ -79,17 +79,7 @@
             </div>
         </nav>
 
-        <div class="table-responsive">
-        <table border="1" class="tabler" style="allign:center;">
-        <tr><th>Name</th>
-            <th>Email</th></tr>
-            <tr>
-            @foreach($users as $user)
-            <td>{{$user->name}}</td>
-            <td>{{$user->email}}</td>
-            @endforeach</tr>
-</table>
-</div>
+      
 
         <main class="py-4">
             @yield('content')
